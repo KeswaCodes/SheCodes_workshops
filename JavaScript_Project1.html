@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Café on 1st</title>
+
+    <style>
+      body {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/078/037/original/g6269ly9.png?1681986235");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      h1 {
+        text-align: center;
+        font-size: 4.5rem;
+        padding-top: 5px;
+        font-family: Ink Free;
+      }
+      #intro {
+        width: 500px;
+        height: 5rem;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+      }
+
+      section {
+        width: 55rem;
+        line-height: normal;
+        height: 215rem;
+
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        border-radius: 6px;
+        background-image: linear-gradient(
+          135deg,
+          rgba(237, 224, 212, 0.3),
+          rgba(230, 204, 178, 1)
+        );
+      }
+      .menu {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 60rem;
+        margin-top: 10rem;
+      }
+
+      .blockMenu {
+        margin-left: 3rem;
+      }
+      h3 {
+        text-align: center;
+      }
+      span {
+        float: right;
+        font-weight: 600;
+        font-style: Palantino Linotype;
+        margin-right: 2.8rem;
+      }
+      li {
+        padding: 6px;
+        font-size: 17px;
+      }
+
+      .drinkType {
+        font-weight: 1000;
+        text-decoration: underline;
+        text-align: center;
+      }
+      .drinkOption {
+        font-style: italic;
+        padding: 3rem;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        border-radius: 3px;
+        box-shadow: 5px 5px #333d29;
+        border: 2px solid black;
+        padding: 0.5rem;
+        transition: 300ms;
+      }
+      button:hover {
+        background-color: rgb(183, 228, 199);
+      }
+
+      a {
+        text-decoration: underline;
+        color: #013a63;
+      }
+      dl {
+        text-align: center;
+        padding: 2rem;
+      }
+      dd {
+        font-style: italic;
+        font-size: 20px;
+      }
+      dt {
+        font-family: papyrus;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+      }
+      input[type="checkbox"] {
+        transform: scale(1.5);
+        margin-left: 12px;
+        margin-right: 12px;
+      }
+      h2 {
+        font-family: Bodoni MT;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      .cakes {
+        display: flex;
+      }
+      #biscuits,
+      #muffins {
+        display: inline-block;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="main">
+      <div id="intro">
+        <strong
+          ><h1>Cafe On 1<sup>st</sup></h1></strong
+        >
+        <h2>
+          <em>
+            You can't buy happiness, but you can buy coffee, and that's pretty
+            close!!!
+          </em>
+        </h2>
+      </div>
+      <hr />
+      <hr />
+      <div class="menu">
+        <div id="espressos">
+          <h3 class="drinkType">Espressos</h3>
+          <img
+            style="float: right; margin-right: 3rem; height: 15rem"
+            src="https://th.bing.com/th?id=OIP.1SIag3CMcvW9ZZTrbqM_CQHaJX&w=222&h=281&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2"
+          />
+          <div class="blockMenu">
+            <br />
+            <ol class="drinkOption">
+              <li>
+                <label><input type="checkbox" />Single Shot Espresso</label>
+                <span class="prices">R17,50</span>
+              </li>
+              <li>
+                <label><input type="checkbox" />Double Shot Espresso</label
+                ><span class="prices">R22,50</span>
+              </li>
+              <li>
+                <label><input type="checkbox" />Macchiato</label
+                ><span class="prices">R22,50</span>
+              </li>
+              <li>
+                <label><input type="checkbox" />Lungo</label
+                ><span class="prices">R21,50</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div id="lattes" style="margin-right: 2rem">
+          <h3 class="drinkType">Lattes</h3>
+          <img
+            src="https://th.bing.com/th?id=OIP.56VLIGTemtcVy5ycXlbr6gHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2"
+            style="
+              float: left;
+              margin-left: 2.5rem;
+              margin-right: 4rem;
+              height: 15rem;
+            "
+          />
+          <div class="blockMenu">
+            <ol class="drinkOption">
+              <li>
+                <label><input type="checkbox" />Vanilla Latte</label
+                ><span class="prices">R35</span>
+              </li>
+              <li>
+                <label><input type="checkbox" />Caramel Latte</label
+                ><span class="prices">R35</span>
+              </li>
+              <li>
+                <label><input type="checkbox" />Hazelnut Latte</label
+                ><span class="prices">R38</span>
+              </li>
+              <li>
+                <label><input type="checkbox" />Coconut Latte</label
+                ><span class="prices">R40</span>
+              </li>
+            </ol>
+          </div>
+          <div class="blockMenu" id="coffees">
+            <h3 class="drinkType">Coffees</h3>
+            <br />
+
+            <img
+              style="float: right; margin-right: 3rem; height: 15rem"
+              src="https://th.bing.com/th?id=OIP.Re7WHLgpMU2E8obQUJb-TAHaLG&w=204&h=306&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2"
+            />
+            <ol class="drinkOption">
+              <li>
+                <label><input type="checkbox" />Americano</label
+                ><span class="prices">R25</span>
+              </li>
+              <li>
+                <label><input type="checkbox" />Cappuccino</label
+                ><span class="prices">R30</span>
+              </li>
+              <li>
+                <label><input type="checkbox" />Flat White</label
+                ><span class="prices">R30</span>
+              </li>
+              <li>
+                <label><input type="checkbox" />Filter Coffee</label
+                ><span class="prices">R20</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <hr />
+
+      <h1>Warm Whiskeys</h1>
+      <h2>Take a look at our grand selection of bean boozled booze</h2>
+      <div id="alcoholicDrinks">
+        <dl>
+          <dt>
+            <label>Irish Coffee<input type="checkbox" /></label>
+          </dt>
+          <dd>
+            A classic blend of coffee, Irish whiskey, sugar, and cream<span
+              class="cost"
+              >R65</span
+            >
+          </dd>
+
+          <dt>
+            <label>Cafe Royale<input type="checkbox" /></label>
+          </dt>
+          <dd>
+            A variation of Irish coffee that adds cognac or brandy<span
+              class="prices"
+              >R75</span
+            >
+          </dd>
+          <dt>
+            <label>Jamaican Coffee<input type="checkbox" /></label>
+          </dt>
+          <dd>
+            A mixture of coffee, Tia Maria or Kahlua, and rum<span
+              class="prices"
+              >R65</span
+            >
+          </dd>
+          <dt>
+            <label>Espresso Martini<input type="checkbox" /></label>
+          </dt>
+          <dd>
+            A cocktail made with espresso, vodka, and Kahlua<span class="prices"
+              >R80</span
+            >
+          </dd>
+          <dt>
+            <label>White Russian<input type="checkbox" /></label>
+          </dt>
+          <dd>
+            A sweet cocktail made with coffee liqueur, vodka, and cream<span
+              class="prices"
+              >R65</span
+            >
+          </dd>
+        </dl>
+      </div>
+      <br />
+      <hr />
+      <hr />
+
+      <h1>Drunken Delights</h1>
+      <h2>
+        Indulge in a slice of our rich and decadent cakes infused with the warm,
+        comforting flavors of your favorite liqueurs
+      </h2>
+      <div id="bakes">
+        <dl>
+          <dt>
+            <label>Amarula Muffin<input type="checkbox" /></label>
+          </dt>
+          <dd>
+            A moist and fluffy muffin with a rich Amarula flavour<span
+              class="prices"
+              >R25</span
+            >
+          </dd>
+          <dt>
+            <label>Irish Coffee Muffin<input type="checkbox" /></label>
+          </dt>
+          <dd>
+            A delicious coffee-infused muffin with a hint of Irish whiskey<span
+              class="prices"
+              >R28</span
+            >
+          </dd>
+          <dt>
+            <label>Kahlua & Cream Cheese Muffin<input type="checkbox" /></label>
+          </dt>
+          <dd>
+            A decadent muffin made with Kahlua liqueur and cream cheese
+            frosting<span class="prices">R30</span>
+          </dd>
+          <dt>
+            <label>Spiced Rum Muffin<input type="checkbox" /></label>
+          </dt>
+          <dd>
+            A warm and cozy muffin with a spicy kick of rum<span class="prices"
+              >R27</span
+            >
+          </dd>
+          <dt>
+            <label>Brandy & Raisin Muffin<input type="checkbox" /></label>
+          </dt>
+          <dd>
+            A classic muffin made with brandy-soaked raisins for a burst of
+            flavor<span class="prices">R26</span>
+          </dd>
+        </dl>
+      </div>
+      <br />
+      <br />
+
+      <p style="text-align: center; font-style: italic; font-size: 18px">
+        Non-alcoholic muffins(R10 - Biscuit/Cookie & R25 - Muffin) are available
+        in the following flavours:
+      </p>
+      <br />
+      <div style="margin-left: 7rem" class="cakes">
+        <ul id="biscuits">
+          <li>
+            <label>Choc-Chip Cookie<input type="checkbox" /></label>
+          </li>
+          <li>
+            <label>Butter Biscuit<input type="checkbox" /></label>
+          </li>
+          <li>
+            <label>Oatmeal Biscuit<input type="checkbox" /></label>
+          </li>
+          <li>
+            <label>Peanut Butter Cookie<input type="checkbox" /></label>
+          </li>
+        </ul>
+
+        <ul id="muffins">
+          <li>
+            <label>Blueberry Muffin<input type="checkbox" /></label>
+          </li>
+          <li>
+            <label>Bran Muffin<input type="checkbox" /></label>
+          </li>
+          <li>
+            <label>Banana Muffin<input type="checkbox" /></label>
+          </li>
+          <li>
+            <label>Chocolate Muffin<input type="checkbox" /></label>
+          </li>
+        </ul>
+      </div>
+      <br />
+
+      <br />
+      <p id="footer" style="text-align: center; font-size: 23px">
+        <strong>
+          <em
+            >Free delivery within 5km radius of the
+            <a
+              href="https://www.google.co.za/maps/place/Caf%C3%A9+on+1st/@40.7703246,-111.876443,17z/data=!3m1!4b1!4m6!3m5!1s0x8752f57120e46b79:0x85b46143ffee8f15!8m2!3d40.7703206!4d-111.8718349!16s%2Fg%2F1tm8fggs"
+              target="_blank"
+              >store</a
+            >.<br />Confirm your order below ⬇</em
+          ></strong
+        >
+      </p>
+      <button id="buyNow">Buy Now</button>
+    </section>
+    <script>
+      let popUp = confirm(
+        "Please confirm that you are at least 18 years of age."
+      );
+      if (popUp == true) {
+      } else {
+        alert("You are not old enough to buy from our cafe");
+        window.close();
+      }
+      function placeOrder() {
+        let name = prompt("Please enter your name");
+        if (!name) {
+          alert("No input!");
+          return;
+        }
+        let age = prompt("Please enter your age");
+
+        if (!age) {
+          alert("No input!");
+        } else if (age < 0) {
+          alert("Invalid age!");
+          return;
+        } else if (age > 80) {
+          alert("Sorry but we cannot sell to you!");
+          window.close();
+        } else if (age < 18) {
+          alert(
+            "Sorry " + name + ". You are not old enough to buy from the store!"
+          );
+          window.close();
+        } else if (age >= 18) {
+          let method = prompt("Delivery or collection? It's up to you!!");
+
+          method = method.toLowerCase().trim();
+          switch (method) {
+            case "delivery":
+              let address = prompt("Please enter your address:");
+              alert("Thank you " + name + " !");
+
+              let message1 = document.getElementById("footer");
+              message1.innerHTML =
+                "Confirmation of your order for delivery at " +
+                address +
+                " has been recieved. Order will be ready in less than 30mins.";
+              message1.style.fontWeight = "bold";
+              return;
+
+            case "collection":
+              alert("Thank you " + name + " !");
+              let message2 = document.getElementById("footer");
+              message2.style.fontWeight = "bold";
+              message2.innerHTML =
+                "Your order will be ready for collection in 15mins.";
+              return;
+
+            default:
+              alert("No selection made");
+          }
+        }
+      }
+
+      let orderButton = document.getElementById("buyNow");
+      orderButton.addEventListener("click", placeOrder);
+    </script>
+  </body>
+</html>
